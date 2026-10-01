@@ -69,7 +69,10 @@ const sparkPosters = [
   { src: '/assets/poster2/sp3.jpg', alt: 'Spark creative poster 03' },
   { src: '/assets/poster2/sp4.jpg', alt: 'Spark creative poster 04' },
   { src: '/assets/poster2/sp5.jpg', alt: 'Spark creative poster 05' },
-  { src: '/assets/poster2/sp6.jpg', alt: 'Spark creative poster 06' }
+  { src: '/assets/poster2/sp6.jpg', alt: 'Spark creative poster 06' },
+  { src: '/assets/postors/Dental_2.png', alt: 'Spark Dental treatment creative poster' },
+  { src: '/assets/postors/Dental_3.png', alt: 'Spark Dental clinic creative poster' },
+  { src: '/assets/postors/Dental_Forkids.png', alt: 'Spark Dental kids dentistry creative poster' }
 ]
 const sparkVideos = [
   { src: '/clients/videos/spark1.mp4', label: 'Spark video 01' },
@@ -80,7 +83,6 @@ const sparkVideos = [
 
 const sreeSuryaHero = '/assets/poster2/sree surya.png'
 const sreeSuryaWork = [
-  { type: 'image', src: '/assets/postors/sg.jpg', alt: 'Sree Surya Infra campaign artwork' },
   { type: 'video', src: '/clients/videos/sri surya.mp4', label: 'Sree Surya Infra campaign video' }
 ]
 
@@ -126,7 +128,9 @@ const industryPortfolio = [
   {
     id: 'real-estate',
     label: 'Real Estate',
-    icon: '&#8962;',
+    icon: '<svg viewBox="0 0 42 42" focusable="false" aria-hidden="true"><path d="M8 35V15l8-5 8 5v20M24 35V9l10 6v20M12 19h4M12 24h4M12 29h4M28 19h3M28 24h3M28 29h3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 36c8-1 20-1 30 0" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>',
+    heroImage: '/assets/postors/real%20estate.png',
+    heroAlt: 'Real estate industry hero artwork',
     summary: 'Property websites, residential launch creatives, and campaign visuals for construction-led brands.',
     websites: [
       { title: 'Ganesh Constructions', url: 'https://ganesh-constructionsweb-w331.vercel.app/' },
@@ -145,12 +149,14 @@ const industryPortfolio = [
     id: 'hospital',
     label: 'Hospital',
     icon: '+',
+    heroImage: '/assets/postors/hospital.png',
+    heroAlt: 'Hospital industry hero artwork',
+    hideHeroCopy: true,
     summary: 'Healthcare, dental, physiotherapy, and health education experiences with trust-first presentation.',
     websites: [
       { title: 'Sanjeevi Digital Health', url: 'https://sanjeevi-digital-health-7vzs.vercel.app/' },
       { title: 'SS Dental', url: 'https://ssdental-six.vercel.app/' },
-      { title: 'Physiotherapy', url: 'https://physiotherapy1.vercel.app/' },
-      { title: 'DC College', url: 'https://dc-college.vercel.app/' }
+      { title: 'Physiotherapy', url: 'https://physiotherapy1.vercel.app/' }
     ],
     media: [
       { type: 'image', src: '/assets/poster2/sp1.jpg', alt: 'Healthcare creative poster 01' },
@@ -165,6 +171,9 @@ const industryPortfolio = [
     id: 'fashion-jewellery',
     label: 'Fashion & Jewellery',
     icon: '&#9671;',
+    heroImage: '/assets/postors/jew.png',
+    heroAlt: 'Fashion and jewellery industry hero artwork',
+    hideHeroCopy: true,
     summary: 'Retail-led visual systems for jewellery, saree, launch, lifestyle, and product storytelling.',
     websites: [
       { title: 'DC Radiant Dreams', url: 'https://dc-radiant-dreams-website.vercel.app/' }
@@ -182,6 +191,9 @@ const industryPortfolio = [
     id: 'divine',
     label: 'Divine',
     icon: '&#10022;',
+    heroImage: '/assets/postors/goddess.png',
+    heroAlt: 'Divine industry hero artwork',
+    hideHeroCopy: true,
     summary: 'Devotional brand presence with calm digital storytelling and complete website access.',
     websites: [
       { title: 'Sri Parasakthi Peetam', url: 'https://www.sriparasakthipeetam.com/' }
@@ -197,6 +209,9 @@ const industryPortfolio = [
     id: 'hotel',
     label: 'Hotel',
     icon: '&#9638;',
+    heroImage: '/assets/postors/hotel.png',
+    heroAlt: 'Hotel industry hero artwork',
+    hideHeroCopy: true,
     summary: 'Hospitality and venue pages framed for atmosphere, booking clarity, and polished browsing.',
     websites: [
       { title: 'Lumi Re Lumina', url: 'https://lumi-re-lumina.vercel.app/' }
@@ -212,6 +227,9 @@ const industryPortfolio = [
     id: 'logistics',
     label: 'Logistics',
     icon: '&#8594;',
+    heroImage: '/assets/postors/logistic.png',
+    heroAlt: 'Logistics industry hero artwork',
+    hideHeroCopy: true,
     summary: 'Import, export, and logistics web presence with direct live previews and campaign-ready cards.',
     websites: [
       { title: 'DC Imports and Exports', url: 'https://dc-importsandexports.vercel.app/' }
@@ -227,9 +245,12 @@ const industryPortfolio = [
     id: 'education',
     label: 'Education',
     icon: '&#9651;',
+    heroImage: '/assets/postors/education.png',
+    heroAlt: 'Education industry hero artwork',
+    hideHeroCopy: true,
     summary: 'Education and institution-ready website work with clear structure and responsive previews.',
     websites: [
-      { title: 'Lumi Re Lumina', url: 'https://lumi-re-lumina.vercel.app/' }
+      { title: 'DC College', url: 'https://dc-college-zeta.vercel.app/' }
     ],
     media: [
       { type: 'image', src: '/assets/poster2/e.jpg', alt: 'Education campaign creative' },
@@ -747,24 +768,10 @@ function sreeSuryaInfraPage() {
       <h2 id="sree-surya-work-title">Our work for Sree Surya Infra</h2>
       <p>A closer look at the visual content created for the Sree Surya Infra brand.</p>
     </div>
-    <div class="sree-surya-showcase" data-sree-active="0">
-      <button class="sree-surya-media sree-surya-media--video is-active" type="button" data-sree-panel="0" data-sree-open="image" aria-label="Open Sree Surya artwork">
-        <img src="${sreeSuryaWork[0].src}" alt="${sreeSuryaWork[0].alt}" loading="eager" decoding="async">
-        <span class="sree-surya-media__shine" aria-hidden="true"></span>
-      </button>
-      <div class="sree-surya-showcase__copy">
-        <p class="kicker">CLIENT WORK</p>
-        <h3>Made to<br>Stand Out</h3>
-        <p>Brand visuals brought together in one immersive showcase.</p>
-        <div class="sree-surya-controls">
-          <button class="sree-surya-arrow sree-surya-prev" type="button" aria-label="Previous Sree Surya media">&larr;</button>
-          <span class="sree-surya-count" aria-live="polite">01 / 02</span>
-          <button class="sree-surya-arrow sree-surya-next" type="button" aria-label="Next Sree Surya media">&rarr;</button>
-        </div>
-      </div>
-      <button class="sree-surya-media sree-surya-media--image" type="button" data-sree-panel="1" data-sree-open="video" aria-label="Open Sree Surya video">
-        <video muted loop playsinline preload="metadata" aria-label="${sreeSuryaWork[1].label}">
-          <source src="${sreeSuryaWork[1].src}" type="video/mp4">
+    <div class="sree-surya-showcase sree-surya-showcase--single" data-sree-active="0">
+      <button class="sree-surya-media sree-surya-media--video is-active" type="button" data-sree-panel="0" data-sree-open="video" aria-label="Open Sree Surya video">
+        <video muted loop playsinline preload="metadata" aria-label="${sreeSuryaWork[0].label}">
+          <source src="${sreeSuryaWork[0].src}" type="video/mp4">
         </video>
         <span class="sree-surya-media__shine" aria-hidden="true"></span>
       </button>
@@ -1233,12 +1240,7 @@ function renderIndustryMediaCard(item, index) {
 }
 
 function renderIndustryPanel(industry, index) {
-  return `<article class="industry-panel${index === 0 ? ' is-active' : ''}" id="industry-panel-${industry.id}" data-industry-panel="${industry.id}" ${index === 0 ? '' : 'hidden'} role="tabpanel" aria-labelledby="industry-tab-${industry.id}">
-    <div class="industry-panel__intro">
-      <p class="kicker">Selected Industry</p>
-      <h3>${industry.label}</h3>
-      <p>${industry.summary}</p>
-    </div>
+  return `<article class="industry-panel${index === 0 ? ' is-active' : ''}" id="industry-panel-${industry.id}" data-industry-panel="${industry.id}" ${index === 0 ? '' : 'hidden'}>
     <div class="industry-showcase-block">
       <div class="industry-subhead">
         <span>01</span>
@@ -1266,35 +1268,32 @@ function industriesWorkedWithSection() {
     <div class="industries-worked__head">
       <p class="kicker">Industries We Worked With</p>
       <h2 id="industries-worked-title">Browse the portfolio by industry.</h2>
-      <p>Select a sector to view live website previews, posters, images, and videos without leaving this client page.</p>
+      <p>Select a sector to open its dedicated website, poster, image, and video showcase page.</p>
     </div>
-    <div class="industry-selector" role="tablist" aria-label="Industry selector">
-      ${industryPortfolio.map((industry, index) => `<button class="industry-card${index === 0 ? ' is-active' : ''}" type="button" role="tab" id="industry-tab-${industry.id}" data-industry-target="${industry.id}"${industry.id === 'real-estate' ? ' data-industry-href="/clients/industries/real-estate/"' : ''} aria-selected="${index === 0 ? 'true' : 'false'}" aria-controls="industry-panel-${industry.id}">
+    <div class="industry-selector industry-selector--links" aria-label="Industry selector">
+      ${industryPortfolio.map(industry => `<a class="industry-card" href="/clients/industries/${industry.id}/" data-industry-target="${industry.id}">
         <span class="industry-card__icon" aria-hidden="true">${industry.icon}</span>
         <b>${industry.label}</b>
-      </button>`).join('')}
-    </div>
-    <div class="industry-panels">
-      ${industryPortfolio.map(renderIndustryPanel).join('')}
+      </a>`).join('')}
     </div>
   </section>`
 }
 
-function realEstateIndustryPage() {
-  const industry = industryPortfolio.find(item => item.id === 'real-estate') || industryPortfolio[0]
+function industryDetailPage(industryId) {
+  const industry = industryPortfolio.find(item => item.id === industryId) || industryPortfolio[0]
+  const heroLabel = industry.hideHeroCopy ? `aria-label="${industry.label} industry hero"` : `aria-labelledby="${industry.id}-hero-title"`
   return `<main class="industry-detail-page">
-  <section class="page-intro page-intro--center">
-    <p class="kicker">Industries We Worked With</p>
-    <h1>Real Estate<br><em>Portfolio</em></h1>
-    <p>Live website previews, posters, and video work for real estate and construction brands.</p>
-    <div class="actions"><a class="button interactive-hover" href="/clients/#industries-worked-with"><span>Back to Industries</span><i aria-hidden="true">-&gt;</i></a></div>
+  <section class="industry-hero" ${heroLabel}>
+    <img class="industry-hero__image" src="${industry.heroImage}" alt="${industry.heroAlt}" decoding="async" fetchpriority="high">
+    <div class="industry-hero__overlay"></div>
+    ${industry.hideHeroCopy ? '' : `<div class="industry-hero__copy">
+      <p class="kicker">Industries We Worked With</p>
+      <h1 id="${industry.id}-hero-title">${industry.label}<br><em>Portfolio</em></h1>
+      <p>${industry.summary}</p>
+      <a class="button interactive-hover" href="/clients/#industries-worked-with"><span>Back to Industries</span><i aria-hidden="true">-&gt;</i></a>
+    </div>`}
   </section>
-  <section class="industries-worked industries-worked--single" aria-labelledby="real-estate-industry-title">
-    <div class="industries-worked__head">
-      <p class="kicker">Selected Industry</p>
-      <h2 id="real-estate-industry-title">Real estate work in one place.</h2>
-      <p>Browse the real estate websites, campaign posters, and video assets from the portfolio.</p>
-    </div>
+  <section class="industries-worked industries-worked--single" aria-label="${industry.label} portfolio showcase">
     <div class="industry-panels">${renderIndustryPanel(industry, 0)}</div>
   </section>
 </main>`
@@ -1429,7 +1428,7 @@ function tirumalasettyPage() { return `<main class="tirumalasetty-case">
 
 function about() { return `<main><section class="page-intro"><p class="kicker">About Dealatecorp</p><h1>Built for the gap between<br><em>ideas and outcomes.</em></h1><p>We are an independent growth partner in Hyderabad, bringing business thinking and digital craft under one roof.</p></section><section class="about-manifesto"><div class="about-number">D<span>→</span></div><div><p class="kicker">Our point of view</p><h2>Clarity is the beginning of good growth.</h2><p>More activity is rarely the answer. Better alignment is. We help teams decide what matters, build it with care, and learn quickly from what the market says next.</p><p>That means fewer disconnected campaigns, fewer vanity reports and more useful conversations about customers, conversion and long-term brand value.</p></div></section><section class="values"><article><span>01</span><h3>Think commercially</h3><p>Creative work must understand the business it serves.</p></article><article><span>02</span><h3>Make with care</h3><p>Details shape trust before a sales conversation begins.</p></article><article><span>03</span><h3>Measure honestly</h3><p>Good reporting explains what changed and what to do next.</p></article></section>${cta()}</main>` }
 
-const pages = {'/':home, '/services':services, '/portfolio':portfolio, '/clients':clientsPage, '/clients/spark':sparkClientPage, '/clients/sree-surya-infra':sreeSuryaInfraPage, '/clients/ganesh-constructions':ganeshConstructionsPage, '/clients/sri-conventions':sriConventionsPage, '/clients/ubic':ubicPage, '/clients/sri-parasakthi-peetam':sriParasakthiPeetamPage, '/clients/sri-venkateswara-constructions':sriVenkateswaraConstructionsPage, '/clients/ssm-construction':ssmConstructionPage, '/clients/adhithya-sai-promoters':adhithyaSaiPromotersPage, '/clients/adithya-sai-promoters':adhithyaSaiPromotersPage, '/clients/tirumalasetty':tirumalasettyPage, '/about':about}
+const pages = {'/':home, '/services':services, '/portfolio':portfolio, '/clients':clientsPage, '/clients/industries/real-estate':() => industryDetailPage('real-estate'), '/clients/industries/hospital':() => industryDetailPage('hospital'), '/clients/industries/fashion-jewellery':() => industryDetailPage('fashion-jewellery'), '/clients/industries/divine':() => industryDetailPage('divine'), '/clients/industries/hotel':() => industryDetailPage('hotel'), '/clients/industries/logistics':() => industryDetailPage('logistics'), '/clients/industries/education':() => industryDetailPage('education'), '/clients/spark':sparkClientPage, '/clients/sree-surya-infra':sreeSuryaInfraPage, '/clients/ganesh-constructions':ganeshConstructionsPage, '/clients/sri-conventions':sriConventionsPage, '/clients/ubic':ubicPage, '/clients/sri-parasakthi-peetam':sriParasakthiPeetamPage, '/clients/sri-venkateswara-constructions':sriVenkateswaraConstructionsPage, '/clients/ssm-construction':ssmConstructionPage, '/clients/adhithya-sai-promoters':adhithyaSaiPromotersPage, '/clients/adithya-sai-promoters':adhithyaSaiPromotersPage, '/clients/tirumalasetty':tirumalasettyPage, '/about':about}
 const appRoot = document.querySelector('#app')
 if (appRoot) appRoot.innerHTML = `${header()}${(pages[path] || home)()}${footer()}`
 document.body.classList.toggle('is-clients-page', path === '/clients')
@@ -1443,6 +1442,7 @@ document.body.classList.toggle('is-svc-page', path === '/clients/sri-venkateswar
 document.body.classList.toggle('is-ssm-page', path === '/clients/ssm-construction')
 document.body.classList.toggle('is-adhithya-page', path === '/clients/adhithya-sai-promoters' || path === '/clients/adithya-sai-promoters')
 document.body.classList.toggle('is-tirumalasetty-page', path === '/clients/tirumalasetty')
+document.body.classList.toggle('is-industry-page', path.startsWith('/clients/industries/'))
 
 const scrollToCurrentHash = () => {
   if (!location.hash) return
@@ -1876,6 +1876,7 @@ if (industriesWorked) {
   const tabs = [...industriesWorked.querySelectorAll('[data-industry-target]')]
   const panels = [...industriesWorked.querySelectorAll('[data-industry-panel]')]
   const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+  const hasInlinePanels = panels.length > 0
 
   const syncIndustryVideos = () => {
     panels.forEach(panel => {
@@ -1904,9 +1905,21 @@ if (industriesWorked) {
   }
 
   tabs.forEach((tab, index) => {
-    tab.tabIndex = index === 0 ? 0 : -1
-    tab.addEventListener('click', () => selectIndustry(tab.dataset.industryTarget))
+    if (hasInlinePanels) tab.tabIndex = index === 0 ? 0 : -1
+    tab.addEventListener('click', () => {
+      if (tab.dataset.industryHref) {
+        window.location.href = tab.dataset.industryHref
+        return
+      }
+      selectIndustry(tab.dataset.industryTarget)
+    })
     tab.addEventListener('keydown', event => {
+      if (!hasInlinePanels) return
+      if ((event.key === 'Enter' || event.key === ' ') && tab.dataset.industryHref) {
+        event.preventDefault()
+        window.location.href = tab.dataset.industryHref
+        return
+      }
       if (!['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(event.key)) return
       event.preventDefault()
       const current = tabs.indexOf(tab)
@@ -1963,9 +1976,11 @@ if (sreeSuryaWorkSection) {
   const muteButton = sreeSuryaWorkSection.querySelector('.sree-surya-frame-sound')
   const volumeSlider = sreeSuryaWorkSection.querySelector('.sree-surya-volume')
   const count = sreeSuryaWorkSection.querySelector('.sree-surya-count')
+  const prevButton = sreeSuryaWorkSection.querySelector('.sree-surya-prev')
+  const nextButton = sreeSuryaWorkSection.querySelector('.sree-surya-next')
   const lightbox = sreeSuryaWorkSection.querySelector('.sree-surya-lightbox')
-  if (!showcase || !panels.length || !count || !lightbox || !sreeSuryaWorkSection.querySelector('.sree-surya-prev') || !sreeSuryaWorkSection.querySelector('.sree-surya-next')) {
-    console.warn('Sree Surya controls skipped: required carousel elements missing.')
+  if (!showcase || !panels.length || !lightbox) {
+    console.warn('Sree Surya controls skipped: required media elements missing.')
   } else {
   const lightboxBody = lightbox.querySelector('.sree-surya-lightbox__body')
   const closeLightboxButton = lightbox.querySelector('.sree-surya-lightbox__close')
@@ -1986,7 +2001,7 @@ if (sreeSuryaWorkSection) {
     activeSree = (index + panels.length) % panels.length
     showcase.dataset.sreeActive = String(activeSree)
     panels.forEach((panel, panelIndex) => panel.classList.toggle('is-active', panelIndex === activeSree))
-    count.textContent = `${String(activeSree + 1).padStart(2, '0')} / 02`
+    if (count) count.textContent = `${String(activeSree + 1).padStart(2, '0')} / ${String(panels.length).padStart(2, '0')}`
   }
   const syncSreeVideo = () => {
     if (!video) return
@@ -2026,8 +2041,10 @@ if (sreeSuryaWorkSection) {
     closeLightboxButton.focus()
   }
 
-  sreeSuryaWorkSection.querySelector('.sree-surya-prev').addEventListener('click', () => setSreeActive(activeSree - 1))
-  sreeSuryaWorkSection.querySelector('.sree-surya-next').addEventListener('click', () => setSreeActive(activeSree + 1))
+  if (prevButton && nextButton) {
+    prevButton.addEventListener('click', () => setSreeActive(activeSree - 1))
+    nextButton.addEventListener('click', () => setSreeActive(activeSree + 1))
+  }
   if (video && playButton && muteButton && volumeSlider) {
     playButton.addEventListener('click', event => {
       event.stopPropagation()

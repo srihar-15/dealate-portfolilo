@@ -1,3 +1,13 @@
 dist/assets/postors/tvideo.MP4 filter=lfs diff=lfs merge=lfs -text
 dist/assets/postors/*.DNG filter=lfs diff=lfs merge=lfs -text
 dist/assets/postors/t4.JPG filter=lfs diff=lfs merge=lfs -text
+dist/assets/postors/Dental_2.png filter=lfs diff=lfs merge=lfs -text
+dist/assets/postors/Dental_3.png filter=lfs diff=lfs merge=lfs -text
+dist/assets/postors/Dental_Forkids.png filter=lfs diff=lfs merge=lfs -text
+dist/assets/postors/education.png filter=lfs diff=lfs merge=lfs -text
+dist/assets/postors/goddess.png filter=lfs diff=lfs merge=lfs -text
+dist/assets/postors/hospital.png filter=lfs diff=lfs merge=lfs -text
+dist/assets/postors/hotel.png filter=lfs diff=lfs merge=lfs -text
+dist/assets/postors/jew.png filter=lfs diff=lfs merge=lfs -text
+dist/assets/postors/logistic.png filter=lfs diff=lfs merge=lfs -text
+dist/assets/postors/real[[:space:]]estate.png filter=lfs diff=lfs merge=lfs -text
