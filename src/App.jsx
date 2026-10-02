@@ -11,6 +11,7 @@ import { Contact } from "./pages/Contact.jsx";
 import { Adhithya } from "./pages/Adhithya.jsx";
 import { Tirumalasetty } from "./pages/Tirumalasetty.jsx";
 import { ProjectEnquiryModal } from "./components/ProjectEnquiryModal.jsx";
+import { DealateAssistant } from "./components/DealateAssistant.jsx";
 import { createAnimationScope } from "./hooks/useAnimationEffect.js";
 import { initSite } from "./hooks/siteAnimations.js";
 
@@ -68,6 +69,7 @@ export default function App({ path }) {
         open={projectFormOpen}
         onClose={() => setProjectFormOpen(false)}
       />
+      <DealateAssistant onStartProject={() => setProjectFormOpen(true)} />
     </>
   );
 }
